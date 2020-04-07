@@ -3,7 +3,8 @@ import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 
 import { Hero }         from '../hero';
-import { HeroService }  from '../hero.service';
+import { HeroService }  from '../hero/hero.service';
+import { resolve } from 'path';
 
 @Component({
   selector: 'app-hero-detail',
@@ -36,5 +37,13 @@ export class HeroDetailComponent implements OnInit {
  save(): void {
     this.heroService.updateHero(this.hero)
       .subscribe(() => this.goBack());
+  }
+
+  saveUsingPromiseJustForTestingPurpose(): void {
+    var p = new Promise((resolve) => {
+      this.heroService.updateHero(this.hero)
+      .subscribe(() => this.goBack());
+      resolve();
+    });
   }
 }
