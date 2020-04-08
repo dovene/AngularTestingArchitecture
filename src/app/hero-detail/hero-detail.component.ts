@@ -4,7 +4,6 @@ import { Location } from '@angular/common';
 
 import { Hero }         from '../hero';
 import { HeroService }  from '../hero/hero.service';
-import { resolve } from 'path';
 
 @Component({
   selector: 'app-hero-detail',
