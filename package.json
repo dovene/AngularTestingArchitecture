@@ -15,8 +15,8 @@
   },
   "husky": {
     "hooks": {
-        "pre-commit": "ng lint",
-        "pre-push": "ng test"
+      "pre-commit": "ng lint",
+      "pre-push": "ng test"
     }
   },
   "keywords": [],
@@ -65,8 +65,8 @@
     "pretty-quick": "^2.0.1",
     "protractor": "5.4.0",
     "ts-node": "7.0.1",
-    "tslint": "5.11.0",
-    "typescript": "3.1.6"
+    "tslint": "^5.11.0",
+    "typescript": "^3.1.6"
   },
   "repository": {}
 }

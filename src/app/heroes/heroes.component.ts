@@ -1,12 +1,12 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit } from '@angular/core';
 
-import { Hero } from "../hero";
-import { HeroService } from "../hero/hero.service";
+import { Hero } from '../hero';
+import { HeroService } from '../hero/hero.service';
 
 @Component({
-  selector: "app-heroes",
-  templateUrl: "./heroes.component.html",
-  styleUrls: ["./heroes.component.css"]
+  selector: 'app-heroes',
+  templateUrl: './heroes.component.html',
+  styleUrls: ['./heroes.component.css']
 })
 export class HeroesComponent implements OnInit {
   heroes: Hero[];
@@ -23,7 +23,7 @@ export class HeroesComponent implements OnInit {
 
   add(name: string): void {
     name = name.trim();
-    var strength = 11;
+    const strength = 11;
     if (!name) {
       return;
     }
