@@ -9,7 +9,9 @@
     "start": "ng serve",
     "test": "ng test",
     "lint": "tslint ./src/**/*.ts -t verbose",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "fix-code": "prettier-eslint --write 'src/**/*.{js,ts,jsx}' ",
+    "fix-styles": "prettier-stylelint --write 'src/**/*.{css,scss}' "
   },
   "keywords": [],
   "author": "",
@@ -60,5 +62,10 @@
     "tslint": "5.11.0",
     "typescript": "3.1.6"
   },
-  "repository": {}
+  "repository": {},
+  "husky": {
+    "hooks": {
+        "pre-commit": "pretty-quick — staged && ng lint"
+    }
+  }
 }
