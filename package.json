@@ -13,6 +13,11 @@
     "fix-code": "prettier-eslint --write 'src/**/*.{js,ts,jsx}' ",
     "fix-styles": "prettier-stylelint --write 'src/**/*.{css,scss}' "
   },
+  "husky": {
+    "hooks": {
+        "pre-commit": "npm test"
+    }
+  },
   "keywords": [],
   "author": "",
   "license": "MIT",
@@ -62,10 +67,5 @@
     "tslint": "5.11.0",
     "typescript": "3.1.6"
   },
-  "repository": {},
-  "husky": {
-    "hooks": {
-        "pre-commit": "pretty-quick — staged && ng lint"
-    }
-  }
+  "repository": {}
 }
