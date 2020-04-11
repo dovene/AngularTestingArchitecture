@@ -7,8 +7,8 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
-  exports: []
+  imports: [ RouterModule.forChild(routes) ],
+  exports: [ RouterModule ]
 })
 export class AboutRoutingModule {
     static components = [ AboutComponent ];
