@@ -6,7 +6,7 @@ import { Observable, of } from 'rxjs';
 import { catchError, map, tap } from 'rxjs/operators';
 
 import { Hero } from '../hero';
-import { MessageService } from '../messages/message.service';
+import { MessageService } from '../core/message.service';
 
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })

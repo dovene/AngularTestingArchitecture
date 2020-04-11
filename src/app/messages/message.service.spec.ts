@@ -1,4 +1,4 @@
-import { MessageService } from './message.service';
+import { MessageService } from '../core/message.service';
 
 describe('MessageService', () => {
   let service: MessageService;

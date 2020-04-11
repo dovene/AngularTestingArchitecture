@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 import { HeroService } from './hero.service';
-import { MessageService } from '../messages/message.service';
+import { MessageService } from '../core/message.service';
 import {
   HttpClientTestingModule,
   HttpTestingController
