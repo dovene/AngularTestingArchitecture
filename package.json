@@ -11,7 +11,8 @@
     "lint": "tslint ./src/**/*.ts -t verbose",
     "e2e": "ng e2e",
     "fix-code": "prettier-eslint --write 'src/**/*.{js,ts,jsx}' ",
-    "fix-styles": "prettier-stylelint --write 'src/**/*.{css,scss}' "
+    "fix-styles": "prettier-stylelint --write 'src/**/*.{css,scss}' ",
+    "dev-server": "lite-server"
   },
   "husky": {
     "hooks": {
@@ -58,6 +59,7 @@
     "karma-coverage-istanbul-reporter": "2.0.1",
     "karma-jasmine": "1.1.2",
     "karma-jasmine-html-reporter": "0.2.2",
+    "lite-server": "^2.5.4",
     "prettier-eslint": "^9.0.1",
     "prettier-eslint-cli": "^5.0.0",
     "prettier-stylelint": "^0.4.2",
