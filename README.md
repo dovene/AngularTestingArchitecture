@@ -1,4 +1,4 @@
-# Pluralsight's Unit Testing in Angular Course
+# Derived mainly from Pluralsight courses
 This is an Angular App that puts together various good practices such as :
 
 - Unit tests
