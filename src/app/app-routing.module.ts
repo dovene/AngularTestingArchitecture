@@ -10,7 +10,9 @@ const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
   { path: 'detail/:id', component: HeroDetailComponent },
   { path: 'heroes', component: HeroesComponent },
-  { path: 'about', loadChildren: () => import('./about/about.module').then(m => m.AboutModule) },
+  // Do not why but using a promise to set the lazy loaded module was not working in prod
+   // { path: 'about', loadChildren: () => import('./about/about.module').then(m => m.AboutModule) },
+  { path: 'about', loadChildren: './about/about.module#AboutModule' },
 
 ];
 
